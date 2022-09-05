@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04</title>
+</head>
+<body>
+    <script>
+        lados = parseInt(prompt("Quantos lados tem seu polígono? "));
+        medida = parseFloat(prompt("Qual a medida dos lados? "));
+        switch (lados) {
+            case 3:
+                area = (medida * medida) / 2
+                document.write("Triangulo, de área " + area)
+                break;
+            case 4:
+                area = (medida * medida)
+                document.write("Quadrado, de área " + area)
+                break;
+            case 5:
+                area = (medida * medida)
+                document.write("Pentágono, de área " + area)
+                break;
+            default:
+                document.write("Quantidade de lados inválida!")
+                break;
+        }
+    </script>
+</body>
+
+</html>
